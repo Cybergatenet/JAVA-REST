@@ -52,8 +52,8 @@ Ensure you have the following installed:
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Cybergatenet/JAVA-REST.git
+cd JAVA-REST
 ```
 
 ### Configure Database
