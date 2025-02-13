@@ -4,5 +4,5 @@ import java.util.List;
 import java.util.Map;
 
 public class dbController {
-//   private Map<> db = List.of(new IndexClass());
+  private Map<Photo,IndexClass> db = Map.of();
 }
