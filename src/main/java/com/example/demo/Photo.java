@@ -9,10 +9,10 @@ public class Photo {
    private String username = "Cybergate";
 
    private Map<String, Photo> db = new HashMap<>() {{
-      put("1", new Photo());
+      db.put("1", new Photo());
    }};
 
-   public Collection<Photo> get() {
+   public Collection<Photo> getPhotos() {
       return null;
    }
    
