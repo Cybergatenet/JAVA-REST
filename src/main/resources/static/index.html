@@ -9,5 +9,24 @@
     <header>
         <h1>A Respresentational State Transfer Protocol Using JAVA</h1>
     </header>
+    <main>
+        <input type="file" id="fileUpload">
+        <button type="button" onclick="uploadFile()"></button>
+    </main>
+
+    <script>
+        async function uploadFile() {
+            await fetch("http://localhost:8080/photos", {
+                method: "post",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify(document.querySelector("#fileUpload"))
+            }).then(res => res.json()).then(result => {
+                console.log(result)                
+            })
+        }
+    </script>
 </body>
 </html>
